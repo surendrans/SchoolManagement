@@ -1,0 +1,21 @@
+<% title "Standards" %>
+
+<table>
+  <tr>
+    <th>Std Name</th>
+    <th>Std Des</th>
+    <th>Std Active</th>
+  </tr>
+  <% for standard in @standards %>
+    <tr>
+      <td><%= standard.std_name %></td>
+      <td><%= standard.std_des %></td>
+      <td><%= standard.std_active %></td>
+      <td><%= link_to_show "Show", standard %></td>
+      <td><%= link_to_edit "Edit", edit_standard_path(standard) %></td>
+      <td><%= link_to_destroy "Destroy", standard, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to_new "New Standard", new_standard_path %></p>

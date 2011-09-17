@@ -1,0 +1,57 @@
+<% title "Students" %>
+
+<table>
+  <tr>
+    <th>Stud Firstname</th>
+    <th>Stud Lastname</th>
+    <th>Stud Sex</th>
+    <th>Stud Dob</th>
+    <th>Stud Father Name</th>
+    <th>Stud Guardian Name</th>
+    <th>Stud Address1</th>
+    <th>Stud Address2</th>
+    <th>Stud State</th>
+    <th>Stud Pin</th>
+    <th>Country</th>
+    <th>Stud Identification</th>
+    <th>Stud Contact Number</th>
+    <th>Stud Blood Group</th>
+    <th>Stud Religion</th>
+    <th>Stud Nationality</th>
+    <th>Stud Mother Tounge</th>
+    <th>Stud Date Of Joining</th>
+    <th>Stud Active</th>
+    <th>School</th>
+    <th>Sub Cast</th>
+  </tr>
+  <% for student in @students %>
+    <tr>
+      <td><%= student.stud_firstname %></td>
+      <td><%= student.stud_lastname %></td>
+      <td><%= student.stud_sex %></td>
+      <td><%= student.stud_dob %></td>
+      <td><%= student.stud_father_name %></td>
+      <td><%= student.stud_guardian_name %></td>
+      <td><%= student.stud_address1 %></td>
+      <td><%= student.stud_address2 %></td>
+      <td><%= student.stud_state %></td>
+      <td><%= student.stud_pin %></td>
+      <td><%= student.country %></td>
+      <td><%= student.stud_identification %></td>
+      <td><%= student.stud_contact_number %></td>
+      <td><%= student.stud_blood_group %></td>
+      <td><%= student.stud_religion %></td>
+      <td><%= student.stud_nationality %></td>
+      <td><%= student.stud_mother_tounge %></td>
+      <td><%= student.stud_date_of_joining %></td>
+      <td><%= student.stud_active %></td>
+      <td><%= student.school %></td>
+      <td><%= student.sub_cast %></td>
+      <td><%= link_to_show "Show", student %></td>
+      <td><%= link_to_edit "Edit", edit_student_path(student) %></td>
+      <td><%= link_to_destroy "Destroy", student, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to_new "New Student", new_student_path %></p>

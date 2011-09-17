@@ -1,0 +1,16 @@
+<%= form_for @section do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :sec_name %><br />
+    <%= f.text_field :sec_name %>
+  </p>
+  <p>
+    <%= f.label :sec_des %><br />
+    <%= f.text_area :sec_des %>
+  </p>
+  <p>
+    <%= f.label :sec_active %><br />
+    <%= f.check_box :sec_active %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

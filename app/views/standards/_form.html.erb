@@ -1,0 +1,16 @@
+<%= form_for @standard do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :std_name %><br />
+    <%= f.text_field :std_name %>
+  </p>
+  <p>
+    <%= f.label :std_des %><br />
+    <%= f.text_area :std_des %>
+  </p>
+  <p>
+    <%= f.label :std_active %><br />
+    <%= f.check_box :std_active %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

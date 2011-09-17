@@ -1,0 +1,48 @@
+<%= form_for @school do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :sc_name %><br />
+    <%= f.text_field :sc_name %>
+  </p>
+  <p>
+    <%= f.label :sc_address1 %><br />
+    <%= f.text_field :sc_address1 %>
+  </p>
+  <p>
+    <%= f.label :sc_address2 %><br />
+    <%= f.text_field :sc_address2 %>
+  </p>
+  <p>
+    <%= f.label :sc_state %><br />
+    <%= f.text_field :sc_state %>
+  </p>
+  <p>
+    <%= f.label :sc_pin %><br />
+    <%= f.text_field :sc_pin %>
+  </p>
+  <p>
+    <%= f.label :sc_country %><br />
+    <%= f.text_field :sc_country %>
+  </p>
+  <p>
+    <%= f.label :sc_tel_no %><br />
+    <%= f.text_field :sc_tel_no %>
+  </p>
+  <p>
+    <%= f.label :sc_web_addr %><br />
+    <%= f.text_field :sc_web_addr %>
+  </p>
+  <p>
+    <%= f.label :sc_email_addr %><br />
+    <%= f.text_field :sc_email_addr %>
+  </p>
+  <p>
+    <%= f.label :sc_fax_no %><br />
+    <%= f.text_field :sc_fax_no %>
+  </p>
+  <p>
+    <%= f.label :sc_active %><br />
+    <%= f.check_box :sc_active %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

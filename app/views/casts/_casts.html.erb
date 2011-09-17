@@ -1,0 +1,21 @@
+
+<p><%= link_to_new "New Cast", new_cast_path %></p>
+
+<table>
+  <tr>
+    <th>Cast Name</th>
+    <th>Cast Des</th>
+    <th>Cast Active</th>
+  </tr>
+  <% for cast in @casts %>
+    <tr>
+      <td><%= cast.cast_name %></td>
+      <td><%= cast.cast_des %></td>
+      <td><%= cast.cast_active %></td>
+      <td><%= link_to_show "Show", cast %></td>
+      <td><%= link_to_edit "Edit", edit_cast_path(cast) %></td>
+      <td><%= link_to_destroy "Destroy", cast, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+

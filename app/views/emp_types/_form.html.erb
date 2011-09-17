@@ -1,0 +1,16 @@
+<%= form_for @emp_type do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :emptype_name %><br />
+    <%= f.text_field :emptype_name %>
+  </p>
+  <p>
+    <%= f.label :emptype_des %><br />
+    <%= f.text_area :emptype_des %>
+  </p>
+  <p>
+    <%= f.label :emptype_active %><br />
+    <%= f.check_box :emptype_active %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

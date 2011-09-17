@@ -1,0 +1,21 @@
+<% title "Sections" %>
+
+<table>
+  <tr>
+    <th>Sec Name</th>
+    <th>Sec Des</th>
+    <th>Sec Active</th>
+  </tr>
+  <% for section in @sections %>
+    <tr>
+      <td><%= section.sec_name %></td>
+      <td><%= section.sec_des %></td>
+      <td><%= section.sec_active %></td>
+      <td><%= link_to_show "Show", section %></td>
+      <td><%= link_to_edit "Edit", edit_section_path(section) %></td>
+      <td><%= link_to_destroy "Destroy", section, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to_new "New Section", new_section_path %></p>

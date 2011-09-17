@@ -1,0 +1,88 @@
+<%= form_for @student do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :stud_firstname %><br />
+    <%= f.text_field :stud_firstname %>
+  </p>
+  <p>
+    <%= f.label :stud_lastname %><br />
+    <%= f.text_field :stud_lastname %>
+  </p>
+  <p>
+    <%= f.label :stud_sex %><br />
+    <%= f.check_box :stud_sex %>
+  </p>
+  <p>
+    <%= f.label :stud_dob %><br />
+    <%= f.date_select :stud_dob %>
+  </p>
+  <p>
+    <%= f.label :stud_father_name %><br />
+    <%= f.text_field :stud_father_name %>
+  </p>
+  <p>
+    <%= f.label :stud_guardian_name %><br />
+    <%= f.text_field :stud_guardian_name %>
+  </p>
+  <p>
+    <%= f.label :stud_address1 %><br />
+    <%= f.text_field :stud_address1 %>
+  </p>
+  <p>
+    <%= f.label :stud_address2 %><br />
+    <%= f.text_field :stud_address2 %>
+  </p>
+  <p>
+    <%= f.label :stud_state %><br />
+    <%= f.text_field :stud_state %>
+  </p>
+  <p>
+    <%= f.label :stud_pin %><br />
+    <%= f.text_field :stud_pin %>
+  </p>
+  <p>
+    <%= f.label :country %><br />
+    <%= f.text_field :country %>
+  </p>
+  <p>
+    <%= f.label :stud_identification %><br />
+    <%= f.text_area :stud_identification %>
+  </p>
+  <p>
+    <%= f.label :stud_contact_number %><br />
+    <%= f.text_field :stud_contact_number %>
+  </p>
+  <p>
+    <%= f.label :stud_blood_group %><br />
+    <%= f.text_field :stud_blood_group %>
+  </p>
+  <p>
+    <%= f.label :stud_religion %><br />
+    <%= f.text_field :stud_religion %>
+  </p>
+  <p>
+    <%= f.label :stud_nationality %><br />
+    <%= f.text_field :stud_nationality %>
+  </p>
+  <p>
+    <%= f.label :stud_mother_tounge %><br />
+    <%= f.text_field :stud_mother_tounge %>
+  </p>
+  <p>
+    <%= f.label :stud_date_of_joining %><br />
+    <%= f.date_select :stud_date_of_joining %>
+  </p>
+  <p>
+    <%= f.label :stud_active %><br />
+    <%= f.check_box :stud_active %>
+  </p>
+  <p>
+    <%= f.label :school %><br />
+    <%= f.text_field :school %>
+  </p>
+  <p>
+    <%= f.label :sub_cast %><br />
+    <%= f.text_field :sub_cast %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

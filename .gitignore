@@ -1,0 +1,7 @@
+Gemfile
+Gemfile.lock
+log/*.log
+tem/
+config/database.yml
+db/schema.rb
+db/seeds.rb

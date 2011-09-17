@@ -1,0 +1,92 @@
+<% title "Student" %>
+
+<p>
+  <strong>Stud Firstname:</strong>
+  <%= @student.stud_firstname %>
+</p>
+<p>
+  <strong>Stud Lastname:</strong>
+  <%= @student.stud_lastname %>
+</p>
+<p>
+  <strong>Stud Sex:</strong>
+  <%= @student.stud_sex %>
+</p>
+<p>
+  <strong>Stud Dob:</strong>
+  <%= @student.stud_dob %>
+</p>
+<p>
+  <strong>Stud Father Name:</strong>
+  <%= @student.stud_father_name %>
+</p>
+<p>
+  <strong>Stud Guardian Name:</strong>
+  <%= @student.stud_guardian_name %>
+</p>
+<p>
+  <strong>Stud Address1:</strong>
+  <%= @student.stud_address1 %>
+</p>
+<p>
+  <strong>Stud Address2:</strong>
+  <%= @student.stud_address2 %>
+</p>
+<p>
+  <strong>Stud State:</strong>
+  <%= @student.stud_state %>
+</p>
+<p>
+  <strong>Stud Pin:</strong>
+  <%= @student.stud_pin %>
+</p>
+<p>
+  <strong>Country:</strong>
+  <%= @student.country %>
+</p>
+<p>
+  <strong>Stud Identification:</strong>
+  <%= @student.stud_identification %>
+</p>
+<p>
+  <strong>Stud Contact Number:</strong>
+  <%= @student.stud_contact_number %>
+</p>
+<p>
+  <strong>Stud Blood Group:</strong>
+  <%= @student.stud_blood_group %>
+</p>
+<p>
+  <strong>Stud Religion:</strong>
+  <%= @student.stud_religion %>
+</p>
+<p>
+  <strong>Stud Nationality:</strong>
+  <%= @student.stud_nationality %>
+</p>
+<p>
+  <strong>Stud Mother Tounge:</strong>
+  <%= @student.stud_mother_tounge %>
+</p>
+<p>
+  <strong>Stud Date Of Joining:</strong>
+  <%= @student.stud_date_of_joining %>
+</p>
+<p>
+  <strong>Stud Active:</strong>
+  <%= @student.stud_active %>
+</p>
+<p>
+  <strong>School:</strong>
+  <%= @student.school %>
+</p>
+<p>
+  <strong>Sub Cast:</strong>
+  <%= @student.sub_cast %>
+</p>
+
+<p>
+  <%= link_to_edit "Edit", edit_student_path(@student) %> |
+  <%= link_to_destroy "Destroy", @student, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", students_path %>
+</p>

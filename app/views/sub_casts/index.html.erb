@@ -1,0 +1,23 @@
+<% title "Sub Casts" %>
+
+<table>
+  <tr>
+    <th>Subcast Name</th>
+    <th>Subcast Des</th>
+    <th>Subcast Active</th>
+    <th>References</th>
+  </tr>
+  <% for sub_cast in @sub_casts %>
+    <tr>
+      <td><%= sub_cast.subcast_name %></td>
+      <td><%= sub_cast.subcast_des %></td>
+      <td><%= sub_cast.subcast_active %></td>
+      <td><%= sub_cast.references %></td>
+      <td><%= link_to_show "Show", sub_cast %></td>
+      <td><%= link_to_edit "Edit", edit_sub_cast_path(sub_cast) %></td>
+      <td><%= link_to_destroy "Destroy", sub_cast, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to_new "New Sub Cast", new_sub_cast_path %></p>
